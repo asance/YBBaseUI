@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "YBBaseUI"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "base permission settings for ubank project."
 
 s.description  = <<-DESC

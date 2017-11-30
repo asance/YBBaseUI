@@ -6,14 +6,16 @@
 //  Copyright © 2017年 asance. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YBBaseViewController.h"
 
 @protocol YBBaseNavigationControllerDelegate;
 
 @interface YBBaseNavigationController : UINavigationController
 @property(weak, nonatomic) id<YBBaseNavigationControllerDelegate> myDelegate;
 /**return YBBaseNavigationController instance by specified viewcontroller*/
-+ (YBBaseNavigationController *)rootController:(NSString *)vcName;
++ (YBBaseNavigationController *)rootControllerForName:(NSString *)vcName;
+/**return YBBaseNavigationController instance by specified viewcontroller*/
++ (YBBaseNavigationController *)rootController:(YBBaseViewController *)viewcontroller;
 @end
 
 @protocol YBBaseNavigationControllerDelegate <NSObject>
